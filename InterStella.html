@@ -7,7 +7,7 @@
        
       body {
      
-        margin: 0px 500px 0px 500px;
+        margin: 10px 250px 10px 250px;
         background-size: cover;
         background-attachment: fixed;
         background-color: rgb(2, 2, 45);
@@ -23,30 +23,28 @@
       body [id="applications"] {
    
           
-        margin-left: 100px;
-        margin-right: 100px;
-        margin-bottom: 250px;
+        margin-left: 250px;
+        margin-right: 250px;
+        margin-bottom: 50px;
         flex-flow: wrap;
         display: flex;
         place-content: center;
         justify-content: center;
-        min-width: 1000px;
+        min-width: 900px;
         max-width: 2000px;
    
       }
    
       div[class="topnav"]  {
-        margin: 0px 500px 0px 500px;
+
+        margin: 0px 250px 0px 250px;
         box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
-        margin-bottom: 50px;
+        margin-bottom: 25px;
        
-   
         /* functions container size */
-   
-        min-width: 1000px;
-        max-width: 2000px;
-        min-height: 80pt;
-        max-height: 80pt;
+        min-width: 850px;
+        min-height: 80px;
+        max-height: 80px;
    
         /* functions container size */
    
@@ -55,58 +53,61 @@
         border-radius: 10px;
         border-color: #2e2e2e39;
         border-style: solid;
-        flex-grow: wrap;
+        flex-wrap: wrap;
         display: flex;
         justify-content: center;
         place-content: center;
        
+       
       }
    
       body div[id="buttons"]  {
-        
-        
         contain: content;
-        margin-top: 18px;
-        margin-bottom: 20px;
-        margin-left: 35x;
-        margin-right: 3px;
-        width: fit-content;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        contain: content;
         flex-flow: wrap;
         display: flex;
+        place-content: bottom;
         justify-content: center;
-        place-content: center;
-   
+        width: 900px;
+        height: 100px;
+        align-content: center;
+        
       }
    
-      button [class="button"], [id="back"] {
+      #back {
 
-        margin-left: 20px;
+        margin-top: 113px;
+        margin-left: 25px;
         margin-right: 2.5px;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        background-color: rgba(0, 0, 0, 0.26);   
+        background-color: rgba(123, 123, 123, 0.347);   
         backdrop-filter: blur(1px);   
         background-image: url("navigation/left-arrow.png");
         box-shadow: 0px 3px 8px 1px rgba(0, 0, 0, 0.489);
         border-color: rgba(17, 17, 17, 0.135);
         border-style: solid;
         border-radius: 10px;
+        border-width: 1px;
         width: 35px;
         height: 35px;
-        flex-flow: wrap;
+        flex-flow: column;
         display: flex;
         justify-content: center;
         place-content: center;
-   
+
       }
    
-      button [class="button"], [id="forward"]  {
- 
+      #forward  {
+
+        margin-top: 113px;
         margin-left: 2.5px;
         background-size: cover;
         background-repeat: no-repeat;
-        background-color: rgba(0, 0, 0, 0.26);   
+        background-color: rgba(123, 123, 123, 0.347);        
         backdrop-filter: blur(1px);       
         border-color: rgba(30, 30, 30, 0.135);
         border-style: solid;
@@ -115,23 +116,23 @@
         width: 35px;
         height: 35px;
         background-image: url("navigation/right-arrow.png");
-        flex-flow: wrap;
+        flex-flow: column;
         display: flex;
         justify-content: center;
         place-content: center;
    
       }
 
-      body button [class="button"], [id="home"] {
-
+      #home {
+        margin-top: 55px;
+        margin-left: 10px;
+        margin-right: 0px;
         background-position: center;
         background-size: 25px 25px; 
         background-repeat: no-repeat;
-        background-color: rgba(0, 0, 0, 0.26);   
+        background-color: rgba(123, 123, 123, 0.347);  
         backdrop-filter: blur(1px);
-        background-image: url("navigation/home.png");
-        margin-left: 5px;
-        margin-right: 15px;
+        background-image: url("/navigation/home.png");
         width: 35px;
         height: 35px;
         box-shadow: 0px 3px 8px 1px rgba(0, 0, 0, 0.489);
@@ -141,66 +142,89 @@
         flex-flow: wrap;
         display: flex;
         justify-content: center;
-        place-content: center; 
+        place-content: center;
       
+
       }
 
-   
       /* Navigation bar style */
-      body input[type="search"] {
+      #query {
 
-        margin-right: 0px;
-        margin-left: 0px;
+        contain: content;
         color: rgba(255, 255, 255, 0.564);
-        min-width: 665px;
-        max-width: 1000px;
-        min-height: 35px;
-        max-height: 35px;
-        margin-top: 34px;
-        margin-bottom: 34px;
+        margin-right: 2px;
+        margin-left: 40px;
+        min-width: 430px;
+        margin-top: 115px;
+        margin-bottom: 0px;
         box-shadow: 0px 3px 8px 1px rgba(0, 0, 0, 0.489);
         border-color: rgba(13, 13, 13, 0.065);
         border-style: solid;
         background-color: rgba(0, 0, 0, 0.26);   
         backdrop-filter: blur(1px);      
         border-radius: 10px;
-        font-size: 17px;
-        flex-flow: wrap;
-        display: flex;
-        justify-content: center;
+        font-size: 15pt;
         
-
       }
-    
    
       input::placeholder  {
 
         color: rgba(255, 255, 255, 0.564);
-        border-radius: 5px;
 
+      }
+
+      div[id="user_input"]  {
+
+        background-color: red;
+        box-sizing: content-box;
+        align-content: center;
+        width: 60px;
+        height: 50px;
       }
    
       button[id="support"] {
-
+        margin-top: 48px;
+        margin-left: 50px;
+        margin-right: px;
+        height: 50px;
+        width: 65px;
+       
         box-shadow: 0px 3px 8px 1px rgba(0, 0, 0, 0.489);
-        margin-top: 4.5px;
         color: rgba(255, 255, 255, 0.564);
-        font-size: 11px;
+        font-size: 12px;
         font-style: blur();
-        height: 35px;
-        width: 90px;
-        margin-left: 0px;
-        margin-right: 5px;
-        background-color: rgba(0, 0, 0, 0.26);   
+        background-color: rgba(123, 123, 123, 0.347);  
         backdrop-filter: blur(10px);         
         border-color: rgba(17, 17, 17, 0.135);
         border-style: solid;
         border-radius: 10px; 
         flex-flow: wrap;
         display: flex;
-        justify-content: center;
         place-content: center;
-        /* touch action */
+        justify-content: center;
+
+      }
+
+      button[id="feedback"] {
+        margin-bottom: 75px;
+        margin-left: 45px;
+        height: 51px;
+        width: 65px;
+        box-shadow: 0px 3px 8px 1px rgba(0, 0, 0, 0.489);
+        color: rgba(255, 255, 255, 0.564);
+        font-size: 12px;
+        margin-top: 75px;
+        font-style: blur();
+        background-color: rgba(123, 123, 123, 0.347);   
+        backdrop-filter: blur(10px);         
+        border-color: rgba(17, 17, 17, 0.135);
+        border-style: solid;
+        border-radius: 10px; 
+        flex-flow: wrap;
+        display: flex;
+       place-content: center;
+       justify-content: center;
+        
 
       }
    
@@ -234,6 +258,22 @@
    
         }
    
+      }
+
+      @media screen and (max-width: 600px) and (max-height: 960px) {
+   
+        a,
+        body,
+        button,
+        image,
+        input,
+        select,
+        text-area  {
+
+          font-size: 50px;
+
+        }
+
       }
    
       @media screen and (max-width: 1512px) and (max-height: 582px) {
@@ -315,9 +355,9 @@
       /* Style website title */
       h1 {
 
-        
-        margin-right: 800px;
-        margin-bottom: 25px;
+        width: 100px;
+        margin-right:  750px;
+        margin-bottom: 30px;
         text-shadow: 0px 5px 20px #000000;
         font-size: 30pt;
         font-family: Calibri, 'Trebuchet MS', sans-serif;
@@ -343,11 +383,6 @@
    
       }
 
-      select  {
-
-        width: 130px;
-        height:15px;
-      }
    
       a {
         color: rgba(0, 255, 255, 0);
@@ -373,7 +408,7 @@
        
       }
       
-   
+      
     </style>
   </head>
 <body>
@@ -387,20 +422,15 @@
   <div class="topnav">  
 
     <div id="buttons">
-
-      <button class="button" id="back">
-
-      </button>
-      <button class="button" id="forward">
-
-      </button>
-      <div id="button">
-          <button href="https://adhduh116.github.io/InterStella-for-Tesla/InterStella.html" class="button" id="home"></button>
-        </a>
-      </div>
-    </div id="buttons">
-       
-    <div id="search">
+      <button class="button" id="back"></button>
+      <button class="button" id="forward"></button>
+      <div>
+      <a id="return" href="https://adhduh116.github.io/InterStella-for-Tesla/InterStella.html">
+        <button  class="button" id="home"></button>
+      </a>
+    </div>
+        
+   
       <form  id="form" role="search" method="get">
         <input id="query" name="q" type="search" placeholder="Search...">
         </input>
@@ -421,19 +451,19 @@
   
         f.addEventListener('submit', submitted);
       </script>
-     
-    </div id="search">
 
-    
-    <a id="support" href="google.com"><button id="support">Support the Creator</button></a>
-    
+     <div id="user_input">
+      <a id="support" href="google.com"><button id="support">Creator Support</button></a>
+</div>
+      <a id="feedback"><button id="feedback">Suggest Feedback</button></a> 
+  </div>
+  
+    </div>
+
 
   </div id="topnav">
-   
-   
+
   <div id="applications" class="icon">
-    
-    
     
     <a id="chrome" href=https://www.youtube.com/redirect?r=https://google.com target="_parent">
       <img
@@ -506,11 +536,11 @@
         src="icons/reddit.png"/></a>
 
     <a id="tesla_forums" href="https://www.youtube.com/redirect?q=https://teslamotorsclub.com/tmc/">
-      <img src="icons/tesla-motors-club.jpeg"/>
+      <img src="/icons/tesla-motors-club.jpeg"/>
     </a>
 
     <a id="snapchat" href="https://www.youtube.com/redirect?q=https://www.snapchat.com">
-      <img src="icons/snapchat.png"/></a>
+      <img src="/icons/snapchat.png"/></a>
 
     <a id="tiktok" href=https://www.youtube.com/redirect?q=https://www.tiktok.com/en>
         <img
@@ -525,7 +555,7 @@
         src="icons/x.png"/></a>
 
     <a id="xbox" href="https://www.youtube.com/redirect?q=https://www.xbox.com/en-US/live">
-      <img src="icons/xbox.png"/>
+      <img src="/icons/xbox.png"/>
     </a>
 
     <a id="whatsapp" href=https://www.youtube.com/redirect?q=https://web.whatsapp.com>
